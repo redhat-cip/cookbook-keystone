@@ -80,7 +80,7 @@ when "fedora", "redhat", "centos" # :pragma-foodcritic: ~FC024 - won't fix this
     "keystone_process_name" => "keystone-all",
     "package_options" => ""
   }
-when "ubuntu"
+when "ubuntu", "debian"
   default["keystone"]["platform"] = {
     "mysql_python_packages" => [ "python-mysqldb" ],
     "keystone_packages" => [ "keystone" ],
